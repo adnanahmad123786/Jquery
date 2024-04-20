@@ -19,6 +19,8 @@ $(function() {
     });
   });
 });
+
+//Update Operation//
 function handleUpdate() {
   var btn = $(this);
   var parentDiv = btn.closest(".recipe");
@@ -32,6 +34,8 @@ function handleUpdate() {
     $("#updateModal").modal("show");
   });
 }
+
+//Post Operation//
 function addRecipe() {
   var title = $("#title").val();
   var body = $("#body").val();
@@ -48,6 +52,8 @@ function addRecipe() {
     }
   });
 }
+
+//Delete Operation//
 function handleDelete() {
   var btn = $(this);
   var parentDiv = btn.closest(".recipe");
@@ -61,6 +67,8 @@ function handleDelete() {
     }
   });
 }
+
+//Get Operation//
 function loadRecipies() {
   $.ajax({
     url: "https://retoolapi.dev/Nv8B0j/data",
